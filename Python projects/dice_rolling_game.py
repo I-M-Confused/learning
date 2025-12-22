@@ -1,19 +1,14 @@
 import random
 
-def roll_dice():
-    return random.randint(1, 6)
-
 def main():
-    print("Welcome to the Dice Rolling Game!")
     while True:
-        user_input = input("Press 'r' to roll the dice or 'q' to quit: ").lower()
-        if user_input == 'r':
-            print(f"You rolled a {roll_dice()}!")
-        elif user_input == 'q':
+        run = input("Roll the dice? (y/n): ")
+        if run == 'y':
+            print("(" , random.randint(1, 6) , "," , random.randint(1, 6) , ")")
+        elif run == 'n':
             print("Thanks for playing!")
             break
         else:
-            print("Invalid input. Please try again.")
+            print("Invalid choice!")
 
-if __name__ == "__main__":
-    main()
+main()
