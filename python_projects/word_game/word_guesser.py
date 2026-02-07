@@ -23,4 +23,3 @@ while count < 5:
         print()
         print(f"Incorrect guess. You have {5 - count} attempts left.")
         
-
